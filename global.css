@@ -1,0 +1,69 @@
+
+body{ 
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-image: url('img/background.jpeg'); /* Replace with the image URL */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh;      
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #5865f2;
+}
+@font-face {
+    font-family: logo-font;
+    src: url(fonts/Rainbow\ Beautiful.otf);
+}
+@font-face {
+    font-family: heading-font;
+    src: url(fonts/Retro\ College.otf);
+}
+@font-face {
+    font-family: button-font;
+    src: url(fonts/RedUniverseDemoRegular.ttf);
+}
+@font-face {
+    font-family: main-font;
+    src: url(fonts/Poppins-Black.ttf);
+}
+button {
+    all: unset; /* Resets all styles */
+    background: transparent; /* Removes background */
+    color: inherit; /* Inherit text color */
+    border: none; /* Removes border */
+    padding: 0; /* Removes padding */
+    font: inherit; /* Inherit font */
+    cursor: pointer; /* Makes it clickable */
+  }
+  
+  button:focus {
+    outline: none; /* Remove outline (be cautious about accessibility) */
+  }
+footer{
+    background-color: #23272a;
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    padding-top: 6rem;
+    color: white;
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    gap: 2rem;
+    font-family: main-font, 'Helvetica  Neue',  Helvetica, Arial, sans-serif    ;
+}
+footer a:hover{
+    color: aqua;
+}
