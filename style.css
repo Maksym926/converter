@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.tab-content{
+    display: none;
+}
+
+.active{
+    display: block;    
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.tabs-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    
+   
+}
+.tab-content{
+    border: 1px solid black;
+    padding: 2rem; 
+    width: 40%;
+}
+.outputField_temperature{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    
+}
+.inputField_temperature{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.from{
+    display: flex;
+    flex-direction: column;
+}
+.to{
+    display: flex;
+    flex-direction: column; 
+}
+.temperatureSelectField1{
+    display: inline-block;
+    width: 212px;
+    height: 30px;
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+.temperatureSelectField2{
+    display: inline-block;
+    width: 212px;
+    height: 30px;
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+.temperature_indicator{
+    background-color: aqua;
+    width: 212px;
+    height: 20px;
+    text-align: center;
+
+}
+.temperature_indicator_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
