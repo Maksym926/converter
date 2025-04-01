@@ -59,23 +59,36 @@
                 </div>
                 
             </div>
-            <div class="tab-content">
-                <select class="currencyField1" onchange="convertCurrency()">
-                    <option value="USD" selected="selected">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="JPY">JPY</option>
-                    <option value="UAH">UAH</option>
-                </select>
-                <select class="currencyField2" onchange="convertCurrency()">
-                    <option value="USD">USD</option>
-                    <option value="EUR" selected="selected">EUR</option>
-                    <option value="JPY">JPY</option>
-                    <option value="UAH">UAH</option>
-                </select>
-                <input type="text" inputmode="numeric" class="inputField_amount" >
+            <div class="tab-content ">
                 
-                <p class="outputField_currency"></p>
-
+                <h1 class="heading">Currency converter</h1>
+                <div class="currency_calc">
+                    <div class="dropdown-menu-content">
+                        <input type="text" inputmode="numeric" class="inputField_amount">   
+                    </div>
+                    <div class="dropdown-menu-content">
+                        <img class="country-flag1" src="img/um.svg" alt="eu" width="40" height="30">
+                        <select class="currencyField1" onchange="convertCurrency()">
+                            <option value="USD" selected="selected">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="JPY">JPY</option>
+                            <option value="UAH">UAH</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-menu-content">
+                        <img class="country-flag2" src="img/eu.svg" alt="eu" width="40" height="30">
+                        <select class="currencyField2" onchange="convertCurrency()">
+                            <option value="USD">USD</option>
+                            <option value="EUR" selected="selected">EUR</option>
+                            <option value="JPY">JPY</option>
+                            <option value="UAH">UAH</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-menu-content">
+                        <p class="outputField_currency"></p>  
+                    </div>
+                    
+                <div>  
                 
             </div>
             <div class="tab-content">
@@ -109,7 +122,7 @@
         </p>
     </div>
     <div class="footer-item">
-        <p>Contact us at: <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a></p>
+        <p>Contact us at: <a href="mailto:support@yourwebsite.com">support@converter.com</a></p>
     </div>
     <div class="footer-item">
         <p>Follow us:</p>

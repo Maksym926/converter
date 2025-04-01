@@ -47,7 +47,7 @@ nav h1{
 .tabs-content{
     display: flex;
     justify-content: center;
-    text-align: center;
+    
     
     
     
@@ -55,9 +55,9 @@ nav h1{
    
 }
 .tab-content{
-    
+    text-align: center;
     padding: 2rem; 
-    width: 40%;
+    width: 50%;
     border-radius: 30px;
     background-color: rgb(46,46,52);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
@@ -158,3 +158,83 @@ nav h1{
     margin: 2rem;
 }
 
+
+.currency_calc{
+    
+   
+    gap: 1rem;
+}
+.dropdown-menu-content {
+   display: flex;
+   justify-content: center;
+}
+
+.inputField_amount{
+    display: block;
+    width: 220px;
+    
+    
+    border-radius: 5px;
+    font-size: 16px;
+    
+    appearance: none;
+    background-color: #23272a; /* Discord grey */
+    border: 1px solid #7289da; /* Discord blurple */
+    color: #ffffff;
+    padding: 5px 20px 5px 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1rem;
+    
+}
+.currencyField1{
+    display: inline-block;
+    width: 212px;
+    height: 30px;
+    
+   
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    appearance: none;
+    background-color: #23272a; /* Discord grey */
+    border: 1px solid #7289da; /* Discord blurple */
+    color: #ffffff;
+    padding: 5px 20px 5px 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1rem;
+    
+}
+.currencyField2{
+    display: inline-block;
+    width: 212px;
+    height: 30px;
+    
+   
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    appearance: none;
+    background-color: #23272a; /* Discord grey */
+    border: 1px solid #7289da; /* Discord blurple */
+    color: #ffffff;
+    padding: 5px 20px 5px 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1rem;
+    
+}
+
+.outputField_currency{
+    display: block;
+    color: white;
+    
+ 
+}

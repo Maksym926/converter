@@ -194,13 +194,39 @@ async function convertCurrency(){ // async function always return promise, which
 // Function takes available conversion rates as an argument
 function runCurrencyConverter(data){  
 
-    // Selecting the currency input fields and output field
+    // Selecting the currency input fields output field and img 
     const currencyField1 = document.querySelector(".currencyField1");
     const currencyField2 = document.querySelector(".currencyField2");
     const outputField_currency = document.querySelector(".outputField_currency");
-
+    const country_flag1 = document.querySelector(".country-flag1");
+    const country_flag2 = document.querySelector(".country-flag2");
+    if(currencyField1.value === "USD"){
+        country_flag1.src = "img/um.svg"
+    }
+    if(currencyField1.value === "EUR"){
+        country_flag1.src = "img/eu.svg"
+    }
+    if(currencyField1.value === "JPY"){
+        country_flag1.src = "img/jp.svg"
+    }
+    if(currencyField1.value === "UAH"){
+        country_flag1.src = "img/ua.svg"
+    }
+    if(currencyField2.value === "USD"){
+        country_flag2.src = "img/um.svg"
+    }
+    if(currencyField2.value === "EUR"){
+        country_flag2.src = "img/eu.svg"
+    }
+    if(currencyField2.value === "JPY"){
+        country_flag2.src = "img/jp.svg"
+    }
+    if(currencyField2.value === "UAH"){
+        country_flag2.src = "img/ua.svg"
+    }
     // Check if converting from USD to EUR
     if(currencyField1.value === "USD" && currencyField2.value === "EUR"){
+        
         let usd = amount.value; 
         // Multiply the amount in USD by the conversion rate to get EUR
         outputField_currency.innerHTML = usd * data.conversion_rates.EUR;  
@@ -345,4 +371,5 @@ function runSpeedConverter(){
         outputField1_speed.innerHTML = inputField_speed.value * 3;
     }
 }
+
 
