@@ -4,7 +4,7 @@ body{
     padding: 0;
 }
 main{
-    background-image: url('img/background.jpeg'); /* Replace with the image URL */
+    background-image: url('img/background.jpeg'); /*set background photo*/
     background-size: cover; /* Ensures the image covers the entire page */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
