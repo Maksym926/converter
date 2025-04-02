@@ -5,6 +5,12 @@
   width: 4.5rem;
   font-size: 4.5rem;
   color: white;
+  margin: 0 1rem;
+}
+.material-symbol-arrowForward{
+    width: 2.5rem;
+    font-size: 2.5rem;
+    color: white;
 }
 .tab-content{
     display: none;
@@ -143,7 +149,7 @@ nav h1{
 }
 .temperature_indicator{
     background-color: aqua;
-    width: 85%;
+    width: 75%;
     height: 20px;
     text-align: center;
     transition: background-color 2s ease-in-out, color 2s ease-in-out;
@@ -160,9 +166,10 @@ nav h1{
 
 
 .currency_calc{
-    
-   
+    display: flex;
     gap: 1rem;
+    align-items: start;
+    justify-content: center;
 }
 .dropdown-menu-content {
    display: flex;
@@ -191,7 +198,7 @@ nav h1{
 }
 .currencyField1{
     display: inline-block;
-    width: 212px;
+    width: 70px;
     height: 30px;
     
    
@@ -212,7 +219,7 @@ nav h1{
 }
 .currencyField2{
     display: inline-block;
-    width: 212px;
+    width: 70px;
     height: 30px;
     
    
@@ -233,8 +240,163 @@ nav h1{
 }
 
 .outputField_currency{
-    display: block;
+    display: inline;
     color: white;
     
  
+}
+.currency_output{
+    text-align: center;
+
+    
+}
+.currency_output h2{
+    font-family: main-font, 'Helvetica  Neue',  Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    display: inline;
+    color: white;
+}
+.dropdown-menu{
+    display: flex;
+}
+.outputField1_speed{
+    
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    background-color: #2a2a30;
+    color: white;
+}
+.speedField1{
+    display: inline-block;
+    width: 212px;
+    height: 60px;
+    
+   
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    appearance: none;
+    background-color: #23272a; /* Discord grey */
+    border: 1px solid #7289da; /* Discord blurple */
+    color: #ffffff;
+    padding: 10px 40px 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1rem;
+}
+.speedField2{
+    display: inline-block;
+    width: 212px;
+    height: 60px;
+    
+   
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    appearance: none;
+    background-color: #23272a; /* Discord grey */
+    border: 1px solid #7289da; /* Discord blurple */
+    color: #ffffff;
+    padding: 10px 40px 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1rem;
+}
+.inputField_speed{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    background-color: #2a2a30;
+    color: white;;
+}
+.content{
+    gap: 2rem;
+}
+.from{
+    display: flex;
+    flex-direction: column;
+}
+.to{
+    display: flex;
+    flex-direction: column;
+}
+.converter-name{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1002px){
+    .currency_calc{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width: 459px){
+    .dropdown-menu img{
+        display: none;
+    }
+    .inputField_amount{
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 1075px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .material-symbols-outlined{
+        display: none;
+    }
+}
+@media only screen and (max-width: 876px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .tab-content{
+        margin: 100px;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+    footer a{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 607px){
+    .heading{
+        font-size: 1.2rem;
+    }
+    .tabs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab-content{
+        margin: 80px;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+    footer a{
+        font-size: 0.7rem;
+    }
 }

@@ -22,8 +22,10 @@
     </header>
     <main>
         <div class="tabs-content">
-            <div class="tab-content active">
-                <h1 class="heading">Temperature converter</h1>
+            <div class="tab-content">
+                <div class="converter-name">
+                    <h1 class="heading">Temperature Converter</h1>
+                </div>
                 <div class="content">
 
                     <div class="from">
@@ -60,55 +62,70 @@
                 
             </div>
             
-            <div class="tab-content">
+            <div class="tab-content active">
                 
-                <h1 class="heading">Currency converter</h1>
+                <h1 class="heading">Currency Converter</h1>
                 <div class="currency_calc">
 
                     <div class="dropdown-menu-content">
                         <input type="text" inputmode="numeric" class="inputField_amount">   
                     </div>
-                    <div class="dropdown-menu-content">
-                        <img class="country-flag1" src="img/um.svg" alt="eu" width="40" height="30">
-                        <select class="currencyField1" onchange="convertCurrency()">
-                            <option value="USD" selected="selected">USD</option>
-                            <option value="EUR">EUR</option>
-                            <option value="JPY">JPY</option>
-                            <option value="UAH">UAH</option>
-                        </select>
-                    </div>
-                    <div class="dropdown-menu-content">
-                        <img class="country-flag2" src="img/eu.svg" alt="eu" width="40" height="30">
-                        <select class="currencyField2" onchange="convertCurrency()">
-                            <option value="USD">USD</option>
-                            <option value="EUR" selected="selected">EUR</option>
-                            <option value="JPY">JPY</option>
-                            <option value="UAH">UAH</option>
-                        </select>
-                    </div>
-                    <div class="dropdown-menu-content">
-                        <p class="outputField_currency"></p>  
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu-content">
+                            <img class="country-flag1" src="img/um.svg" alt="eu" width="40" height="30">
+                            <select class="currencyField1" onchange="convertCurrency()">
+                                <option value="USD" selected="selected">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="JPY">JPY</option>
+                                <option value="UAH">UAH</option>
+                            </select>
+                        </div>
+                        <img src="img/arrow_forward.png" alt="arrow_forward" width="40" height="30">
+                        <div class="dropdown-menu-content">
+                            <img class="country-flag2" src="img/eu.svg" alt="eu" width="40" height="30">
+                            <select class="currencyField2" onchange="convertCurrency()">
+                                <option value="USD">USD</option>
+                                <option value="EUR" selected="selected">EUR</option>
+                                <option value="JPY">JPY</option>
+                                <option value="UAH">UAH</option>
+                            </select>
+                        </div>
                     </div>
                     
                 </div>  
+                
+                <div class="currency_output">
+                    <h2>Result: </h2>
+                    <p class="outputField_currency"></p>      
+                </div>
             </div>
             <div class="tab-content">
-                <select class="speedField1" onchange="runSpeedConverter()">
-                    <option value="kmph" selected="selected">Km per hour (km/h)</option>
-                    <option value="mps">Meters per second (m/s)</option>
-                    <option value="fps">Feet per second (ft/s)</option>
-                    <option value="yps">Yards per second (yd/s)</option>
-                </select>
-                <select class="speedField2" onchange=" runSpeedConverter()">
-                    <option value="kmph">Km per hour (km/h)</option>
-                    <option value="mps" selected="selected">Meters per second (m/s)</option>
-                    <option value="fps">Feet per second (ft/s)</option>
-                    <option value="yps">Yards per second (yd/s)</option>
-                </select>
-                
-                <input type="text" inputmode="numeric" class="inputField_speed">
-                <p class="outputField1_speed"></p>
-
+                <h1 class="heading">Speed Converter</h1>
+                <div class="content">
+                    
+                    <div class="from">
+                        
+                        <select class="speedField1" onchange="runSpeedConverter()">
+                            <option value="kmph" selected="selected">Km per hour (km/h)</option>
+                            <option value="mps">Meters per second (m/s)</option>
+                            <option value="fps">Feet per second (ft/s)</option>
+                            <option value="yps">Yards per second (yd/s)</option>
+                        </select>
+                        <input type="text" inputmode="numeric" class="inputField_speed">
+                        
+                    </div>
+                    <div class="to">
+                        
+                        <select class="speedField2" onchange=" runSpeedConverter()">
+                            <option value="kmph">Km per hour (km/h)</option>
+                            <option value="mps" selected="selected">Meters per second (m/s)</option>
+                            <option value="fps">Feet per second (ft/s)</option>
+                            <option value="yps">Yards per second (yd/s)</option>
+                        </select>
+                        <p class="outputField1_speed"></p>
+                    </div>
+                    
+                </div>
             </div>
         </div>
            
@@ -120,7 +137,7 @@
     <div class="footer-item">
         <p>© 2025 Converter All rights reserved.</p>
         <p>
-            <a href="#">Privacy Policy</a> | 
+            <a href="#">Privacy Policy</a>  
             <a href="#">Terms and Conditions</a>
         </p>
     </div>
@@ -131,8 +148,8 @@
         <p>Follow us:</p>
         <ul>
             <li>
-                <a href="#">Twitter</a> | 
-                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a>  
+                <a href="#">Facebook</a> 
                 <a href="#">Instagram</a>
             </li>
         </ul>
