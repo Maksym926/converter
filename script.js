@@ -32,27 +32,28 @@ inputField.addEventListener("input", () => { // the event runs when user entered
 // initialize Celsius, Fahrenheit, Kelvin, Rankine classes 
 class Celsius{ 
     //define properties, which take celsius as an argument and convert it to the fahrenheit, kelvin or rankine
-    static fahrenheit = (celsius) => {return Number(celsius) * 9/5 + 32;} 
-    static kelvin = (celsius) => {return Number(celsius) + 273.15;}
-    static rankine = (celsius) => { return (Number(celsius) + 273.15) * 9/5;}
+    static fahrenheit = (celsius) => {const result = celsius< -273.15 ? "lowest temperature is -273.15" : Number(celsius) * 9/5 + 32; return result;} 
+    static kelvin = (celsius) => {const result = celsius< -273.15 ? "lowest temperature is -273.15" : Number(celsius) + 273.15; return result;}
+    static rankine = (celsius) => {const result = celsius< -273.15 ? "lowest temperature is -273.15" : (Number(celsius) + 273.15) * 9/5; return result;}
 }
 class Fahrenheit{
     //define properties, which take fahrenheit as an argument and convert it to the celsius, kelvin or rankine
-    static celsius = (fahrenheit) => {return (Number(fahrenheit) - 32) * 5/9;}
-    static kelvin = (fahrenheit) => {return (Number(fahrenheit) + 459.67) * 5/9;}
-    static rankine = (fahrenheit) => { return  Number(fahrenheit) + 459.67;}
+    static celsius = (fahrenheit) => {const result = fahrenheit< -459.67 ? "lowest temperature is -459.67" :(Number(fahrenheit) - 32) * 5/9; return result}
+    static kelvin = (fahrenheit) => {const result = fahrenheit< -459.67 ? "lowest temperature is -459.67" : (Number(fahrenheit) + 459.67) * 5/9; return result}
+    static rankine = (fahrenheit) => {const result = fahrenheit< -459.67 ? "lowest temperature is -459.67": Number(fahrenheit) + 459.67; return result;}
 }
 class Kelvin{
     //define properties, which take kelvin as an argument and convert it to the celsius, fahrenheit or rankine
-    static celsius = (kelvin) => {return Number(kelvin) - 273.15;}
-    static fahrenheit = (kelvin) => {return Number(kelvin) * 9/5 - 459.67;}
-    static rankine = (kelvin) => { return  Number(kelvin) * 9/5;}
+    static celsius = (kelvin) => {const result = kelvin< 0 ? "lowest temperature is 0": Number(kelvin) - 273.15; return result;}
+    static fahrenheit = (kelvin) => {const result = kelvin< 0 ? "lowest temperature is 0" : Number(kelvin) * 9/5 - 459.67; return result;}
+    static rankine = (kelvin) => {const result = kelvin< 0 ? "lowest temperature is 0" : Number(kelvin) * 9/5; return result;}
 }
 class Rankine{
     //define properties, which take rankine as an argument and convert it to the celsius, kelvin or fahrenheit
-    static celsius = (rankine) => {return Number(rankine) * 5/9 - 273.15;}
-    static fahrenheit = (rankine) => {return Number(rankine) - 459.67;}
-    static kelvin = (rankine) => { return  Number(rankine) * 5/9;}
+    // additionally the temperature is checked against absolute zero (0K) to ensure accurate calculation
+    static celsius = (rankine) => {const result = rankine< 0 ? "lowest temperature is 0" : Number(rankine) * 5/9 - 273.15; return result;}
+    static fahrenheit = (rankine) => {const result = rankine< 0 ? "lowest temperature is 0" : Number(rankine) - 459.67;  return result;}
+    static kelvin = (rankine) => {const result = rankine< 0 ? "lowest temperature is 0" : Number(rankine) * 5/9; return result;}
 }
 
 function runTemperatureConverter(){

@@ -9,7 +9,7 @@
 }
 
 
-/* navigation and tabs */
+/* Navigation and Tabs */
 /* Hides tab content by default */
 .tab-content{
     display: none;
@@ -79,10 +79,11 @@
 }
 
 /* Styles input and output fields for temperature conversion */
+
 .outputField_temperature, .inputField_temperature{
     display: inline-block;
     width: 200px;
-    height: 30px;
+    height: 18px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -90,6 +91,7 @@
     text-align: left;
     background-color: #2a2a30;
     color: white;
+    
     
 }
 /* adjust tab content */
@@ -112,8 +114,6 @@
     display: inline-block;
     width: 212px;
     height: 60px;
-    
-   
     border-radius: 5px;
     font-size: 16px;
     text-align: left;
@@ -169,11 +169,8 @@
 .inputField_amount{
     display: block;
     width: 220px;
-    
-    
     border-radius: 5px;
     font-size: 16px;
-    
     appearance: none;
     background-color: #23272a; 
     border: 1px solid #7289da; 
@@ -190,9 +187,6 @@
 .currencyField1, .currencyField2{
     display: inline-block;
     width: 70px;
-    height: 30px;
-    
-   
     border-radius: 5px;
     font-size: 16px;
     text-align: left;
@@ -230,11 +224,10 @@
 }
 /* Speed Converter */
 /* Styles input and output fields for speed conversion */
-.outputField1_speed, .inputField_speed{
-    
+.outputField1_speed, .inputField_speed{ 
     display: inline-block;
     width: 200px;
-    height: 30px;
+    height: 18px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -248,8 +241,6 @@
     display: inline-block;
     width: 212px;
     height: 60px;
-    
-   
     border-radius: 5px;
     font-size: 16px;
     text-align: left;
