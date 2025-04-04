@@ -1,8 +1,9 @@
-
+/* deletes default body margins and paddings */
 body{ 
     margin: 0;
     padding: 0;
 }
+/* Sets background image on the main section*/
 main{
     background-image: url('img/background.jpeg'); /*set background photo*/
     background-size: cover; /* Ensures the image covers the entire page */
@@ -10,6 +11,7 @@ main{
     background-repeat: no-repeat; /* Prevents the image from repeating */
     height: 100vh;      
 }
+/* deletes for p, ul and a elements default styles  */
 p{
     margin: 0;
 }
@@ -22,6 +24,13 @@ a{
     text-decoration: none;
     color: #5865f2;
 }
+/* set hover for select element */
+select:hover{
+    border-color: #5865f2; 
+
+}
+
+/* define variables for fonts */
 @font-face {
     font-family: logo-font;
     src: url(fonts/Rainbow\ Beautiful.otf);
@@ -38,19 +47,22 @@ a{
     font-family: main-font;
     src: url(fonts/Poppins-Black.ttf);
 }
+/* Style tab buttons for navigation section */
 button {
     all: unset; /* Resets all styles */
     background: transparent; /* Removes background */
     color: inherit; /* Inherit text color */
     border: none; /* Removes border */
-    padding: 0; /* Removes padding */
+    padding: 0; 
     font: inherit; /* Inherit font */
     cursor: pointer; /* Makes it clickable */
   }
   
   button:focus {
-    outline: none; /* Remove outline (be cautious about accessibility) */
+    outline: none; /* Remove outline  */
   }
+
+/* style footer */
 footer{
     background-color: #23272a;
     padding: 1rem;
@@ -64,6 +76,7 @@ footer{
     gap: 2rem;
     font-family: main-font, 'Helvetica  Neue',  Helvetica, Arial, sans-serif    ;
 }
+/*hover for links in footer  */
 footer a:hover{
     color: aqua;
 }

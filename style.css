@@ -1,24 +1,24 @@
 
-
-
+/* Google Icons Styles */
+/* Styles the Google Material Symbols icons with a fixed width, font size, and color */
 .material-symbols-outlined {
   width: 4.5rem;
   font-size: 4.5rem;
   color: white;
   margin: 0 1rem;
 }
-.material-symbol-arrowForward{
-    width: 2.5rem;
-    font-size: 2.5rem;
-    color: white;
-}
+
+
+/* navigation and tabs */
+/* Hides tab content by default */
 .tab-content{
     display: none;
 }
-
+/* Displays active tab content */
 .active{
     display: block;    
 }
+/* Styles the navigation bar */
 .navigation{
     display: flex;
     justify-content: space-between;
@@ -27,39 +27,39 @@
     background-color: rgb(46,46,52);
     
 }
+/* Styles the navigation heading */
 .navigation h1{
     color: white;
     font-family: logo-font, 'Helvetica  Neue',  Helvetica, Arial, sans-serif;
     font-size: 5rem;
     margin: 0;
 }
-.heading{
+/* Styles converter headings */
+.converter-name{
     color: white;
     font-family: heading-font, 'Helvetica  Neue',  Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     padding-bottom: 2rem;
 }
+/* Styles the tab navigation */
 .tabs{
     display: flex;    
     gap: 1rem;
     font-family: button-font, 'Helvetica  Neue',  Helvetica, Arial, sans-serif;
 }
+/* Styles individual tab buttons */
 .tab{
     padding: 1rem;
     background-color: rgb(46,46,52);
     color: white;
     font-size: 1.5rem;
 }
+/* Styles the tab content container */
 .tabs-content{
     display: flex;
     justify-content: center;
-    
-    
-    
-    
-    
-   
 }
+/* Styles tab content sections */
 .tab-content{
     text-align: center;
     padding: 2rem; 
@@ -70,38 +70,45 @@
     margin-top: 15rem;
     
 }
-.outputField_temperature{
-    display: inline-block;
-    width: 200px;
-    height: 30px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: left;
-    background-color: #2a2a30;
-    color: white;
-    
-}
-.inputField_temperature{
-    display: inline-block;
-    width: 200px;
-    height: 30px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: left;
-    background-color: #2a2a30;
-    color: white;
-    
-}
-.content{
-    display: flex;
+
+/* Temperature Converter */
+/* Style converter name */
+.converter-name{
+    display: flex; 
     justify-content: center;
 }
 
-.temperatureSelectField1{
+/* Styles input and output fields for temperature conversion */
+.outputField_temperature, .inputField_temperature{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    background-color: #2a2a30;
+    color: white;
+    
+}
+/* adjust tab content */
+.main-tab-content{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.from{
+    display: flex;
+    flex-direction: column;
+}
+.to{
+    display: flex;
+    flex-direction: column;
+}
+/* Styles the temperature select dropdowns */
+
+.temperatureSelectField1, .temperatureSelectField2{
     display: inline-block;
     width: 212px;
     height: 60px;
@@ -111,8 +118,8 @@
     font-size: 16px;
     text-align: left;
     appearance: none;
-    background-color: #23272a; /* Discord grey */
-    border: 1px solid #7289da; /* Discord blurple */
+    background-color: #23272a; 
+    border: 1px solid #7289da; 
     color: #ffffff;
     padding: 10px 40px 10px 15px;
     border-radius: 5px;
@@ -123,32 +130,13 @@
     
 
 }
-.temperatureSelectField1:hover{
-    border-color: #5865f2; /* Brighter blurple */
+/* Hover effect */
 
-}
-.temperatureSelectField2{
-    display: inline-block;
-    width: 212px;
-    height: 60px;
-    
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: left;
-    appearance: none;
-    background-color: #23272a; /* Discord grey */
-    border: 1px solid #7289da; /* Discord blurple */
-    color: #ffffff;
-    padding: 10px 40px 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    
-}
+
+/* Temperature Indicator */
+/* Styles temperature indicator bar*/
 .temperature_indicator{
-    background-color: aqua;
+    background-color: white;
     width: 75%;
     height: 20px;
     text-align: center;
@@ -164,18 +152,20 @@
     margin: 2rem;
 }
 
-
-.currency_calc{
+/* currency converter */
+.tab-main-content-currency{
     display: flex;
     gap: 1rem;
     align-items: start;
     justify-content: center;
 }
+
 .dropdown-menu-content {
    display: flex;
    justify-content: center;
 }
 
+/* Styles input fields for currency conversion */
 .inputField_amount{
     display: block;
     width: 220px;
@@ -185,8 +175,8 @@
     font-size: 16px;
     
     appearance: none;
-    background-color: #23272a; /* Discord grey */
-    border: 1px solid #7289da; /* Discord blurple */
+    background-color: #23272a; 
+    border: 1px solid #7289da; 
     color: #ffffff;
     padding: 5px 20px 5px 7px;
     border-radius: 5px;
@@ -196,7 +186,8 @@
     margin-bottom: 1rem;
     
 }
-.currencyField1{
+/* Styles dropdowns for currency conversion */
+.currencyField1, .currencyField2{
     display: inline-block;
     width: 70px;
     height: 30px;
@@ -206,29 +197,8 @@
     font-size: 16px;
     text-align: left;
     appearance: none;
-    background-color: #23272a; /* Discord grey */
-    border: 1px solid #7289da; /* Discord blurple */
-    color: #ffffff;
-    padding: 5px 20px 5px 7px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    margin-bottom: 1rem;
-    
-}
-.currencyField2{
-    display: inline-block;
-    width: 70px;
-    height: 30px;
-    
-   
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: left;
-    appearance: none;
-    background-color: #23272a; /* Discord grey */
-    border: 1px solid #7289da; /* Discord blurple */
+    background-color: #23272a; 
+    border: 1px solid #7289da; 
     color: #ffffff;
     padding: 5px 20px 5px 7px;
     border-radius: 5px;
@@ -239,11 +209,10 @@
     
 }
 
+/* Styles currency conversion output */
 .outputField_currency{
     display: inline;
     color: white;
-    
- 
 }
 .currency_output{
     text-align: center;
@@ -259,7 +228,9 @@
 .dropdown-menu{
     display: flex;
 }
-.outputField1_speed{
+/* Speed Converter */
+/* Styles input and output fields for speed conversion */
+.outputField1_speed, .inputField_speed{
     
     display: inline-block;
     width: 200px;
@@ -272,7 +243,8 @@
     background-color: #2a2a30;
     color: white;
 }
-.speedField1{
+/* Styles speed dropdowns */
+.speedField1 , .speedField2{
     display: inline-block;
     width: 212px;
     height: 60px;
@@ -282,8 +254,8 @@
     font-size: 16px;
     text-align: left;
     appearance: none;
-    background-color: #23272a; /* Discord grey */
-    border: 1px solid #7289da; /* Discord blurple */
+    background-color: #23272a; 
+    border: 1px solid #7289da; 
     color: #ffffff;
     padding: 10px 40px 10px 15px;
     border-radius: 5px;
@@ -292,60 +264,22 @@
     outline: none;
     margin-bottom: 1rem;
 }
-.speedField2{
-    display: inline-block;
-    width: 212px;
-    height: 60px;
-    
-   
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: left;
-    appearance: none;
-    background-color: #23272a; /* Discord grey */
-    border: 1px solid #7289da; /* Discord blurple */
-    color: #ffffff;
-    padding: 10px 40px 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    margin-bottom: 1rem;
-}
-.inputField_speed{
-    display: inline-block;
-    width: 200px;
-    height: 30px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: left;
-    background-color: #2a2a30;
-    color: white;;
-}
-.content{
-    gap: 2rem;
-}
-.from{
-    display: flex;
-    flex-direction: column;
-}
-.to{
-    display: flex;
-    flex-direction: column;
-}
-.converter-name{
-    display: flex;
-    justify-content: center;
-}
+
+
+
+
+
+
+/* Styles burger button */
 .burger_button{
-    display: none;
+    display: none; /* hide button by default*/
     background-color: transparent;
     border: none;
 }
+
+/* Responsive Design */
 @media screen and (max-width: 1002px){
-    .currency_calc{
+    .tab-main-content-currency{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -363,7 +297,7 @@
     }
 }
 @media only screen and (max-width: 1075px){
-    .heading{
+    .converter-name{
         font-size: 1.3rem;
     }
     .navigation{
@@ -375,7 +309,7 @@
     }
 }
 @media only screen and (max-width: 876px){
-    .content{
+    .main-tab-content{
         display: flex;
         flex-direction: column;
         
@@ -408,7 +342,7 @@
     }
 }
 @media only screen and (max-width: 680px){
-    .heading{
+    .converter-name{
         font-size: 0.8rem;
     }
    
@@ -423,7 +357,12 @@
     }
 }
 @media screen and (max-width: 415px){
-    .heading{
+    .converter-name{
         font-size: 0.5rem;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 4000px){
+    .temperature_indicator{
+        width: 45%;
     }
 }
