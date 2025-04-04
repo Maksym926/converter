@@ -19,7 +19,7 @@
 .active{
     display: block;    
 }
-nav{
+.navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@ nav{
     background-color: rgb(46,46,52);
     
 }
-nav h1{
+.navigation h1{
     color: white;
     font-family: logo-font, 'Helvetica  Neue',  Helvetica, Arial, sans-serif;
     font-size: 5rem;
@@ -339,6 +339,11 @@ nav h1{
     display: flex;
     justify-content: center;
 }
+.burger_button{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
 @media screen and (max-width: 1002px){
     .currency_calc{
         flex-direction: column;
@@ -347,6 +352,8 @@ nav h1{
     }
     
 }
+
+
 @media screen and (max-width: 459px){
     .dropdown-menu img{
         display: none;
@@ -356,7 +363,10 @@ nav h1{
     }
 }
 @media only screen and (max-width: 1075px){
-    nav{
+    .heading{
+        font-size: 1.3rem;
+    }
+    .navigation{
         display: flex;
         flex-direction: column;
     }
@@ -371,6 +381,22 @@ nav h1{
         
         align-items: center;
     }
+    .burger_button{
+        display: block;
+        cursor: pointer;
+    }
+    .tabs{
+        display: none;
+    }
+    .active{ 
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        flex-direction: column;
+    }
+    
     .tab-content{
         margin: 100px;
     }
@@ -381,15 +407,11 @@ nav h1{
         font-size: 1rem;
     }
 }
-@media only screen and (max-width: 607px){
+@media only screen and (max-width: 680px){
     .heading{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
-    .tabs{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+   
     .tab-content{
         margin: 80px;
     }
@@ -398,5 +420,10 @@ nav h1{
     }
     footer a{
         font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 415px){
+    .heading{
+        font-size: 0.5rem;
     }
 }

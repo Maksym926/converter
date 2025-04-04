@@ -200,6 +200,8 @@ function runCurrencyConverter(data){
     const outputField_currency = document.querySelector(".outputField_currency");
     const country_flag1 = document.querySelector(".country-flag1");
     const country_flag2 = document.querySelector(".country-flag2");
+    
+    // Check the currency and assign the corresponding flag to the image source
     if(currencyField1.value === "USD"){
         country_flag1.src = "img/um.svg"
     }
@@ -212,6 +214,7 @@ function runCurrencyConverter(data){
     if(currencyField1.value === "UAH"){
         country_flag1.src = "img/ua.svg"
     }
+
     if(currencyField2.value === "USD"){
         country_flag2.src = "img/um.svg"
     }
@@ -372,4 +375,12 @@ function runSpeedConverter(){
     }
 }
 
+// select burger button and tabs from the document 
+let burger_button = document.querySelector('.burger_button');
+let tabs = document.querySelector('.tabs');
 
+
+burger_button.addEventListener('click', () => { // event runs after clicking on the button
+    tabs.classList.toggle('active'); // assign or refuse active class for tabs
+
+});
